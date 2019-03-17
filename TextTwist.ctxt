@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=TextTwist
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ TextTwist\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=fileName
+comment1.target=TextTwist(java.lang.String)
+comment2.params=
+comment2.target=void\ printRemainingWords()
+comment3.params=
+comment3.target=boolean\ endCondition()
+comment4.params=guess
+comment4.target=void\ inputGameValue(java.lang.String)
+comment5.params=
+comment5.target=void\ play()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
