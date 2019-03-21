@@ -6,8 +6,9 @@ import java.util.Scanner;
 /**
  * Write a description of class TextTwist here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Aidan Canavan
+ * @version 1
+ * 
  */
 public class TextTwist
 {
@@ -21,6 +22,7 @@ public class TextTwist
         letters = sc.next();
         letterList = new ArrayList<String>();
         correctWords = new ArrayList<String>();
+        
         
         while(sc.hasNext()){
             String str = sc.next();
@@ -56,10 +58,12 @@ public class TextTwist
     }
     public boolean endCondition(){
         int counter = 0;
+        
     for(int i:wordNumbers){
         counter = counter+i;
     
     }
+    //System.out.println(counter);
     if (counter == 0){
         return false;
     }
@@ -85,7 +89,27 @@ public class TextTwist
         }
         
     }
-    
+    public boolean inputGameValueForGUI(String guess){
+        guess = guess.toLowerCase();
+        WordFinder wf = new WordFinder();
+        if(!wf.contains(letters,guess)){
+            //System.out.println("Input letters invalid.");
+            return false;
+        }
+        else if(!correctWords.contains(guess)){
+            //System.out.println(guess+" is not a correct word.");
+            return false;
+        }
+        else{
+            //System.out.println(guess+" was found.");
+            correctWords.remove(correctWords.indexOf(guess));
+            wordNumbers[guess.length()]--;
+            //System.out.println("Your word was removed from list of possible words.");
+            return true;
+            //printRemainingWords();
+        }
+        
+    }
     public void play(){
         System.out.println("Welcome to Text Twist.");
         Scanner myScanner = new Scanner(System.in);
@@ -97,8 +121,9 @@ public class TextTwist
         String input = myScanner.next();
         inputGameValue(input);
         }
-        
+        System.out.println("You win!!");
     }
+    
     public static void main(String[] args) throws FileNotFoundException{
     TextTwist t = new TextTwist("input.txt");
     t.play();

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=TextTwistGUI
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ TextTwistGUI\ here.\r\n\r\n\ @author\ Aidan\ Canavan\r\n\ @version\ 1\r\n
+comment1.params=fileName
+comment1.target=TextTwistGUI(java.lang.String)
+comment2.params=
+comment2.target=void\ run()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
