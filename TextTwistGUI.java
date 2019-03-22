@@ -20,6 +20,7 @@ public class TextTwistGUI extends JFrame
     public String input = "";
     public String letters = "abcdef";
     public JLabel word;
+    public JLabel time;
     ArrayList<JButton> buttons = new ArrayList<JButton>();
     public int correctWords = 0;
     public TextTwist myTextTwist;
@@ -31,6 +32,8 @@ public class TextTwistGUI extends JFrame
     public JButton random;
     public JButton clear;
     public JButton help;
+    int globalTime = -1;
+    Timer myTimer;
     public TextTwistGUI(String fileName)throws FileNotFoundException, IOException{
         
         super("Text Twist");
@@ -64,9 +67,19 @@ public class TextTwistGUI extends JFrame
             add(n);
             displayLabels.add(n);
         }
+        //timer below
+        myTimer = new Timer(1000,new TimerListener());
+        
+        myTimer.start();
+        time = new JLabel(Integer.toString(globalTime));
+        time.setFont(new Font("TimesRoman", Font.PLAIN, 40));
+        time.setBounds(100,10,250,80);
+        time.setVisible(true);
+        time.setLayout(null);
+        add(time);
         //help button
         help = new JButton("Help");
-        help.setFont(new Font("TimesRoman", Font.PLAIN, 10));
+        help.setFont(new Font("TimesRoman", Font.PLAIN, 20));
         help.setBounds(450,30,100,50);
         help.addActionListener(new HelpListener());
         add(help);
@@ -88,6 +101,7 @@ public class TextTwistGUI extends JFrame
         String it = letters.substring(i,i+1);
         JButton b =  new JButton(it);
         buttons.add(b);
+        b.setFont(new Font("TimesRoman", Font.PLAIN, 25));
         b.addActionListener(new ButtonListener(it,i));
         b.setBounds(200 + (i*50),250,50,50);
         add(b);
@@ -141,7 +155,14 @@ public class TextTwistGUI extends JFrame
     //public void playGame(String fileName)throws FileNotFoundException{
     
     //}
+    class TimerListener implements ActionListener{
+    public TimerListener(){}
+    public void actionPerformed(ActionEvent e){
+    globalTime++;
+    time.setText(Integer.toString(globalTime));
+    }
     
+    }
     
     class ButtonListener implements ActionListener{
         public String text ="";
@@ -196,6 +217,7 @@ public class TextTwistGUI extends JFrame
         String it = letters.substring(i,i+1);
         JButton b =  new JButton(it);
         buttons.add(b);
+        b.setFont(new Font("TimesRoman", Font.PLAIN, 25));
         b.addActionListener(new ButtonListener(it,i));
         b.setBounds(200 + (i*50),250,50,50);
         add(b);
@@ -271,8 +293,9 @@ public class TextTwistGUI extends JFrame
         }
         
         if(!myTextTwist.endCondition()){
-            gameStatus.setForeground(Color.GREEN);
-            gameStatus.setText("You Win!");
+            myTimer.stop();
+            gameStatus.setForeground(Color.BLACK);
+            gameStatus.setText("You win in: "+globalTime+"s");
             enter.setEnabled(false);
             clear.setEnabled(false);
             random.setEnabled(false);
