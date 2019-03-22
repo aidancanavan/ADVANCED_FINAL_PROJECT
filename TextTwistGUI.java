@@ -303,8 +303,8 @@ public class TextTwistGUI extends JFrame
     setSize(600,700);
     setVisible(true);
     }
-    public static void main(String[] args)throws FileNotFoundException, IOException{
-        TextTwistGUI tt = new TextTwistGUI("input.txt");
+    public static void main(String[] args) throws FileNotFoundException, IOException{
+        TextTwistGUI tt = new TextTwistGUI(args[0]);
         tt.run();
         
     }
