@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=HowToPlayFrame
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ HowToPlayFrame\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Displays\ a\ jframe\ for\ users\ to\ learn\ how\ to\ play\r\n\r\n\ @author\ Aidan\ Canavan\r\n\ @version\ 1.0\r\n
 comment1.params=
 comment1.target=HowToPlayFrame()
+comment1.text=\r\n\ Constructor\ for\ the\ JFRAME\r\n
 comment2.params=b
 comment2.target=void\ createGUI(javax.swing.JButton)
+comment2.text=\r\n\ Creates\ the\ GUI\ for\ frame,\ makes\ visible\r\n\ @param\ b\ A\ JButton\r\n\ \r\n
 comment3.params=e
 comment3.target=void\ windowClosing(java.awt.event.WindowEvent)
 numComments=4

@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=Unscrambler
-comment0.text=\r\n\ \r\n\r\n\ @author\ Aidan\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ that\ allows\ user\ to\ find\ how\ many\ words\ exist\ in\ a\ word\r\n\ @author\ Aidan\ Canavan\r\n\ @1.0\r\n
 comment1.params=fileName
 comment1.target=Unscrambler(java.lang.String)
+comment1.text=\r\n\ \r\n\ Constructor\ for\ Unscrambler\r\n\ @param\ fileName\ A\ string\ representing\ a\ filename\r\n\ @throws\ FileNotFoundException\r\n
 comment2.params=target
 comment2.target=boolean\ findWords(java.lang.String)
+comment2.text=\r\n\ Finds\ the\ amount\ of\ words\ in\ a\ target\ string,\ adds\ them\ to\ a\ list\r\n\ @param\ target\ The\ target\ string\r\n\ @return\ true\ if\ method\ worked\ correctly,\ else\ false\r\n\ @throws\ FileNotFoundException\r\n
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
 numComments=4

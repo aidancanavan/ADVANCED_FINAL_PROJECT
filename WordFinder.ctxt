@@ -1,12 +1,15 @@
 #BlueJ class context
 comment0.target=WordFinder
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ WordFinder\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ This\ class\ has\ a\ static\ class\ method\ called\ contains,\ which\ takes\ \r\n\ two\ string\ arguments,\ text\ and\ target.\ The\ function\ will\ \r\n\ return\ true\ if\ the\ text\ (first\ argument)\ contains\ all\ of\ the\ letters\ \r\n\ (case\ insensitive,\ but\ distribution-sensitive)\ in\ the\ target\ string\ \r\n\ (second\ argument).\ \ Otherwise,\ the\ function\ will\ return\ false.\r\n\r\n\ @author\ Aidan\ Canavan\r\n\ @version\ 1.0\r\n
 comment1.params=text\ target
 comment1.target=boolean\ contains(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Takes\ two\ string\ arguments,\ returns\ true\ if\ first\ argument\ contains\ all\ of\ the\ letters\ in\ the\ second\ argument.\ Else,\ \r\n\ returns\ false\r\n\ \r\n\ @param\ text\ first\ string\ argument\r\n\ @param\ target\ second\ string\ argument\r\n\ @return\ true\ if\ first\ argument\ contains\ all\ of\ the\ letters\ in\ the\ second\ argument.\ Else,\ returns\ false\r\n
 comment2.params=str\ letter
 comment2.target=int\ numLetters(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ This\ method\ returns\ the\ number\ of\ times\ a\ given\ letter\ shows\ up\r\n\ @param\ str\ String\ to\ search\r\n\ @param\ letter\ letter\ to\ search\ for\ in\ str\r\n\ @return\ amount\ of\ times\ letter\ is\ in\ word\r\n
 comment3.params=str\ delete
 comment3.target=java.lang.String\ deleteLetter(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Deletes\ a\ letter\ from\ a\ string\r\n\ @param\ str\ String\ to\ delete\ from\r\n\ @param\ delete\ Letter\ to\ delete\ from\ str\r\n
 comment4.params=args
 comment4.target=void\ main(java.lang.String[])
 numComments=5

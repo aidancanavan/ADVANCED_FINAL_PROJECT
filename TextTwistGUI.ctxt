@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=TextTwistGUI
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ TextTwistGUI\ here.\r\n\r\n\ @author\ Aidan\ Canavan\r\n\ @version\ 1\r\n
+comment0.text=\r\n\ Implements\ graphic\ user\ inferface\ for\ testtwist\r\n\r\n\ @author\ Aidan\ Canavan\r\n\ @version\ 1\r\n
 comment1.params=fileName
 comment1.target=TextTwistGUI(java.lang.String)
+comment1.text=\r\n\ TexTwistGUI\ constructor\r\n\ @param\ fileName\ String\ that\ is\ name\ of\ text\ file\ to\ read\ from\r\n\ @throws\ FileNotFoundExpception\r\n\ @throws\ IOException\r\n
 comment2.params=
 comment2.target=void\ run()
+comment2.text=\r\n\ Runs\ JFRAME\r\n
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
 numComments=4
