@@ -10,16 +10,19 @@ import java.util.ArrayList;
  * @author Aidan Canavan
  * @version 1.0
  */
+
 ////////////////////////////////////////////////////////////////////////////////
 public class WordFinder
 {
     /**
-     * Takes two string arguments, returns true if first argument contains all of the letters in the second argument. Else, 
+     * Takes two string arguments, returns true if first argument contains all 
+     * of the letters in the second argument. Else, 
      * returns false
      * 
      * @param text first string argument
      * @param target second string argument
-     * @return true if first argument contains all of the letters in the second argument. Else, returns false
+     * @return true if first argument contains all of the letters in the 
+     * second argument. Else, returns false
      */
     public static boolean contains(String text, String target){
         text = text.toLowerCase();
@@ -58,7 +61,7 @@ public class WordFinder
         }
         return true;
     }
-    
+    ////////////////////////////////////////////////////////////////////////////////
     /**
      * This method returns the number of times a given letter shows up
      * @param str String to search
