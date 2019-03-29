@@ -61,7 +61,7 @@ public class TextTwistGUI extends JFrame
                 }
             }
         }
-        //System.out.println(displayList);
+
         int count =0;
         for(String str:displayList){
             count++;
@@ -152,14 +152,12 @@ public class TextTwistGUI extends JFrame
         gameStatus.setVisible(true);
     }
 
-    //public void playGame(String fileName)throws FileNotFoundException{
-    //}
     class TimerListener implements ActionListener{
         /**
          * Empty constructor
          */
         public TimerListener(){}
-        
+
         /**
          * Declares an action performed
          * @param e ActionEvent to use
@@ -207,13 +205,12 @@ public class TextTwistGUI extends JFrame
          */
         @Override
         public void actionPerformed(ActionEvent e){
-            //clear first
-            //System.out.println(letters);
+
             input = "";
             for(JButton f:buttons){
                 f.setEnabled(true);
             }
-            //System.out.println("Cleared");
+
             word.setText(input);
 
             //delete vuttons
@@ -236,7 +233,6 @@ public class TextTwistGUI extends JFrame
                 letters = letters+lett.get(p);
             }
 
-            //System.out.println(letters);
             //make new buttons with new letters
             for(int i =0;i<letters.length();i++){
                 String it = letters.substring(i,i+1);
