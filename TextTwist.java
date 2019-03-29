@@ -4,13 +4,16 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * Write a description of class TextTwist here.
+ * This class provides the background logic for the testtwist game.
+ * it generates a random combination of characters based on an input
+ * file. The user then needs to rearrange this letters to find all
+ * matched words in the file.
  *
  * @author Aidan Canavan
  * @version 1
  * 
  */
-////////////////////////////////////////////////////////////////////////////////
+
 public class TextTwist
 {
     public ArrayList<String> letterList;
